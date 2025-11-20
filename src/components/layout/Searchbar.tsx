@@ -1,6 +1,10 @@
 import { Search } from 'lucide-react';
 
-export default function SearchBar() {
+interface SearchBarProps {
+  location: string;
+}
+
+export default function SearchBar({ location }: SearchBarProps) {
   return (
     <div className='border-b border-gray-200 bg-white'>
       <div className='mx-auto max-w-[1400px] px-4 py-4'>
@@ -11,7 +15,7 @@ export default function SearchBar() {
               type='text'
               placeholder='Cammeray, NSW 2062'
               className='w-full rounded-lg border border-none py-2.5 pr-4 pl-10 focus:border-transparent focus:ring-2 focus:ring-red-500 focus:outline-none'
-              defaultValue='Cammeray, NSW 2062'
+              defaultValue={location}
             />
           </div>
           <button className='rounded-lg border border-gray-300 px-6 py-2.5 text-sm font-medium whitespace-nowrap hover:bg-gray-50'>

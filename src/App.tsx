@@ -15,24 +15,31 @@ const queryClient = new QueryClient({
   },
 });
 
+const location = 'Cammeray, NSW 2062';
+const totalProperties = MOCK_PROPERTIES.length; // Total available properties
+const displayedCount = MOCK_PROPERTIES.length; // Currently displayed properties
+
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className='min-h-screen bg-gray-50'>
         <Header />
         <Breadcrumb />
-        <SearchBar />
-        <FilterBar />
+        <SearchBar location={location} />
 
+        {/* MOVE YOUR TITLE + SAVE SEARCH INTO MAIN */}
         <main className='mx-auto max-w-[1400px] px-4 py-6'>
-          <div className='mb-6 flex items-center justify-between'>
-            <div className='flex gap-6'>
+          <div className='mb-6 flex w-full items-center justify-between'>
+            <div className='flex w-[68%] justify-between gap-6'>
               <div>
-                <h1 className='mb-1 text-2xl font-bold text-gray-900'>
-                  Real Estate & Property for sale in Cammeray, NSW 2062
+                <h1 className='mb-1 text-xl font-bold text-gray-900'>
+                  Real Estate & Property for sale in {location}
                 </h1>
-                <p className='text-sm text-gray-600'>Showing 1 - 25 of 797 properties</p>
+                <p className='text-sm text-gray-600'>
+                  Showing 1 - {displayedCount} of {totalProperties} properties
+                </p>
               </div>
+
               <button className='flex items-center gap-2 rounded-lg border border-gray-300 px-4 py-2 hover:bg-gray-50'>
                 <Star className='h-5 w-5' />
                 <span className='font-medium'>Save search</span>
