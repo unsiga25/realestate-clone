@@ -1,0 +1,68 @@
+import type { Property } from '../types/property';
+
+export const MOCK_PROPERTIES: Property[] = [
+  {
+    id: 1,
+    price: '$2,500,000',
+    address: '12 Cammeray Road',
+    suburb: 'Cammeray, NSW 2062',
+    beds: 4,
+    baths: 2,
+    parking: 2,
+    propertyType: 'House',
+    image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=600&fit=crop',
+    agent: {
+      name: 'Sarah Mitchell',
+      agency: 'Ray White Lower North Shore',
+      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah',
+    },
+  },
+  {
+    id: 2,
+    price: '$1,850,000',
+    address: '5/78 Murdoch Street',
+    suburb: 'Cammeray, NSW 2062',
+    beds: 3,
+    baths: 2,
+    parking: 1,
+    propertyType: 'Apartment',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop',
+    agent: {
+      name: 'James Chen',
+      agency: 'McGrath North Sydney',
+      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=James',
+    },
+  },
+  {
+    id: 3,
+    price: '$3,200,000',
+    address: '45 Ernest Street',
+    suburb: 'Cammeray, NSW 2062',
+    beds: 5,
+    baths: 3,
+    parking: 2,
+    propertyType: 'House',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop',
+    agent: {
+      name: 'Emma Thompson',
+      agency: 'Belle Property Mosman',
+      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Emma',
+    },
+  },
+  {
+    id: 4,
+    price: '$1,450,000',
+    address: '12/156 Willoughby Road',
+    suburb: 'Cammeray, NSW 2062',
+    beds: 2,
+    baths: 1,
+    parking: 1,
+    propertyType: 'Apartment',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop',
+    agent: {
+      name: 'Michael Davis',
+      agency: 'LJ Hooker Crows Nest',
+      avatar: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Michael',
+    },
+  },
+];
