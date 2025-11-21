@@ -1,8 +1,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Header from './components/layout/Header';
 import Breadcrumb from './components/layout/Breadcrumb';
-import SearchBar from './components/layout/SearchBar';
-import FilterBar from './components/properties/FilterBar';
+import SearchBar from './components/layout/Searchbar';
 import PropertyGrid from './components/properties/PropertyGrid';
 import { MOCK_PROPERTIES } from './data/mockProperties';
 
